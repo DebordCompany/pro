@@ -1,0 +1,21 @@
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    display: none;
+}
+.desplegable{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: right;
+    opacity: 100;
+}
