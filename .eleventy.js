@@ -1,4 +1,6 @@
+
 module.exports = function (eleventyConfig){
+    
 
     eleventyConfig.addPassthroughCopy("./src/css/");
     eleventyConfig.addWatchTarget("./src/css/");
@@ -8,7 +10,7 @@ module.exports = function (eleventyConfig){
     eleventyConfig.addWatchTarget("./src/js/");
     eleventyConfig.addPassthroughCopy("./src/pages/");
     eleventyConfig.addWatchTarget("./src/pages/");
-
+    
 
 
     return {
@@ -17,4 +19,6 @@ module.exports = function (eleventyConfig){
             output: "public",
         },
     };
+    
 };
+
