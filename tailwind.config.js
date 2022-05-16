@@ -1,17 +1,17 @@
 module.exports = {
-  content: ["./**/*.{html,js}"],
+  content: ["./public/pages/curriculum/index.html"],
   theme: {
-    extend: {colors: {
-      secondary: '#FFB800',
-      black: '#101010',
-    },
+    
     fontFamily: {
       sans: ['Montserrat Alternates'],
       serif: ['Montserrat Alternates'],
-   },
-  },
+    },
+    extend: {
+      colors: {
+        primary: '#101010',
+        secondary: '#FFB800',
+      
+    },},
   },
   plugins: [],
 }
-
-      

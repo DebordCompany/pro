@@ -10,7 +10,7 @@ body{
 a{
     text-decoration: none;
 }
-ul{
+.ul{
     display: none;
 }
 .desplegable{
@@ -19,4 +19,12 @@ ul{
     justify-content: right;
     align-items: right;
     opacity: 100;
+}
+hr{
+    border-top: 6px solid rgb(43, 43, 43);
+    margin-top: 10px;
+    
+}
+span{
+    font-weight: 600;
 }

@@ -93,34 +93,25 @@ a{
   display: flex;
   justify-content: center;
 }
-/*.one{
-  /* background-image: url(/media/practica\ vietnam\ nocturno.png);background-position: center;background-size: cover;
-}
-.two{
-  background-image: url(/media/cartel\ publicidad\ debord.png);background-position: center;background-size: cover;
-}
-.tree{
-  background-image: url(/media/rolling\ stones.png);background-position: center;background-size: cover;
-}
-.four{
-  background-image: url(/media/atrapame\ si\ puedes.png);background-position: center;background-size: cover;
-}**/
+ 
+/****** play ****/
 
-/*.swiper-slide {*//*
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}**/
-
+.animate{
+  
+  animation-name: animate;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+@keyframes animate{
+  0% {color: white;
+      font-size: 16px;
+  }
+  100% { color: #FFB800;
+          font-size: 18px;
+  }
+}
 /******* media queies *******/
 
 @media ( min-width: 600px){

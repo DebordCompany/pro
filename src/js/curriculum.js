@@ -5,7 +5,7 @@ window.onload = function(){
     
     const boton = document.getElementById("accion");
     const menu = document.getElementById("hide");
-    const quitar = document.querySelector("ul");
+    const quitar = document.querySelector(".ul");
     const fuera = document.querySelector(".main");
     
     boton.addEventListener("click", desplegar);
