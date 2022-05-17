@@ -8,6 +8,7 @@ var swiper = new Swiper('.swiper-container', {
   },
 });
 //cambio de imagen vietnam
+
 var edited01 = document.getElementById("vietnam")
 var boton01 = document.getElementById("trans-01")
 var botonreverse01 = document.getElementById("trans--01")
