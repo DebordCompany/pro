@@ -505,6 +505,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-items: flex-end;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -512,6 +516,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-primary {
   --tw-bg-opacity: 1;
   background-color: rgb(16 16 16 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\'\/media\/background-paper-texture\.jpg\'\)\] {
+  background-image: url('/media/background-paper-texture.jpg');
 }
 
 .p-3 {
@@ -532,9 +540,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.5rem;
 }
 
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .py-24 {
@@ -552,11 +560,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.25rem;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
 .pt-3 {
   padding-top: 0.75rem;
 }
@@ -569,36 +572,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: right;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
 
-.font-bold {
-  font-weight: 700;
-}
-
-.font-medium {
-  font-weight: 500;
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-light {
   font-weight: 300;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .text-primary {
@@ -611,17 +600,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.opacity-80 {
+  opacity: 0.8;
+}
+
+.mix-blend-multiply {
+  mix-blend-mode: multiply;
+}
+
 .outline {
   outline-style: solid;
+}
+
+.drop-shadow {
+  --tw-drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 @media (min-width: 640px) {
   .sm\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .sm\:p-8 {
-    padding: 2rem;
   }
 
   .sm\:p-4 {
