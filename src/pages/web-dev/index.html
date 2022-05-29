@@ -1,127 +1,335 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Developer -  </title>
-    <link rel="stylesheet" href="/css/configbts.css">
-    <link rel="stylesheet" type="text/css" href="/css/web.css?v=1" media="all">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="icon" type="image/jpg" href="/media/favicon.png"/>
-    
-</head>
-<body>
-    <nav class="container-fluid navbar bg-primary shadow p-3 ">
-
-        <div class="container">
-
-            <div>
-                 <a href="/index.html"><img src="/media/buho outline cuadrado blanco.png" alt="logo" width="40px" height="auto"></a>
-             </div>
-             <img  data-bs-toggle="collapse" href="#opciones" role="button" aria-expanded="false" aria-controls="opciones" src="/media/hamburguesa.svg" alt="menu" width="40px" height="auto">
-            <div class="collapse navbar-collapse" id="opciones">
-                <ul class="navbar-nav col justyfy-content-end">
-                    <li class="nav-item py-3 text-end"><a style="color:white;" class="" href="/index.html">Inicio</a> </li>
-                    <li class="nav-item py-3 text-end"><a style="color:white;" class="" href="/galeria.html">Galería</a> </li>
-                    <li class="nav-item py-3 text-end"><a style="color:white;" class="" href="/curriculum.html">Curriculum</a> </li>
-                    <li class="nav-item py-3 text-end"><a style="color:white;" class=""  href="/index.html">Contacto</a> </li>
-                    
-                </ul> 
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Developer -</title>
+    <link rel="stylesheet" href="/css/configbts.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/css/web.css?v=2.19"
+      media="all"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/jpg" href="/media/favicon.png" />
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  </head>
+  <body class="mb-5">
+    <!-- nav-->
+    <nav class="container-fluid navbar bg-primary shadow p-3" id="azul">
+      <div class="container">
+        <div>
+          <a href="/index.html"
+            ><img
+              src="/media/buho outline cuadrado blanco.png"
+              alt="logo"
+              width="40px"
+              height="auto"
+          /></a>
         </div>
-        
+        <img
+          data-bs-toggle="collapse"
+          href="#opciones"
+          role="button"
+          aria-expanded="false"
+          aria-controls="opciones"
+          src="/media/hamburguesa.svg"
+          alt="menu"
+          width="40px"
+          height="auto"
+        />
+        <div class="collapse navbar-collapse" id="opciones">
+          <ul class="navbar-nav col justyfy-content-end">
+            <li class="nav-item py-3 text-end">
+              <a style="color: white" class="" href="/index.html">Inicio</a>
+            </li>
+            <li class="nav-item py-3 text-end">
+              <a style="color: white" class="" href="/pages/design/index.html"
+                >Galería</a
+              >
+            </li>
+            <li class="nav-item py-3 text-end">
+              <a
+                style="color: white"
+                class=""
+                href="/pages/curriculum/index.html"
+                >Curriculum</a
+              >
+            </li>
+            <li class="nav-item py-3 text-end">
+              <a style="color: white" class="" href="/index.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
-     <!-- html-->
-     <section class="container-fluid background p-5">
-         
-         <article class="row">
-             <div class="col-sm-4 p-2 d-flex justify-content-center">
-                 <div class="d-flex align-items-center">
-                    <img class="img-fluid" src="/media/iphone-illustracion.png" alt="" width="180px" height="auto">
-                 </div>
-                 
-            </div>
-             <div class="col-sm-4 p-2 d-flex justify-content-center">
-                 <div class="d-flex align-items-center">
-                     <img class="img-fluid" src="/media/ipad-illustracion.png" alt="" width="200px" height="auto">
-                 </div>
-                 
-            </div>
-             <div class="col-sm-4 p-2 d-flex justify-content-center">
-                 <div class="d-flex align-items-center">
-                    <img class="img-fluid" src="/media/imac-illustracion.png" alt="" width="260px" height="auto">
-                 </div>
-            </div>
-         </article>
-     </section>
-     
 
-     
+    <!--portada-->
+    <section
+      class="container-fluid bg-danger d-flex flex-column align-items-center px-4 p-800"
+    >
+      <article
+        class="maxresp container d-flex flex-column flex-lg-row justify-content-center align-items-center"
+      >
+        <div class="d-flex flex-column justify-content-center">
+          <h1 class="text-white py-3 display-2 fw-bold text-end">
+            Un recorrido por el desarrollo web
+          </h1>
+          <p class="fs-5 text-end">
+            En el master descubrí el desarrollo web, desde entonces combino mi
+            pasion por el diseño con ese rompecabezas que llamamos desarrollador
+          </p>
+        </div>
+        <img class="m-5 imagen" src="/media/iphone-ilustracion.png" alt="" />
+      </article>
+    </section>
 
-        
-     </section>
-     <section class="container-fluid py-5">
-         <article class="container media-1024">
-           
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="/media/atrapame si puedes.jpg" class="d-block w-100 text-center img-fluid" alt="...">
-                  </div>
-                  <div class="carousel-item w-xl-50">
-                    <img src="/media/avion.jpg" class="d-block w-100 text-center img-fluid" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/media/CARTEL ISOMETRICO.jpg" class="d-block w-100 text-center img-fluid" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+    <!--desplegable-->
+
+    <section class="py-5 px-4 d-flex flex-column align-items-center">
+      <article class="maxresp d-flex flex-column align-items-start">
+        <h2 class="px-3 py-5 text-start">Un camino ya andado</h2>
+        <div
+          class="accordion accordion-flush container-fluid"
+          id="accordionFlushExample"
+        >
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                Formación
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                En 2021 cursé el master de la escuela Trazos_ de diseño grafico
+                y desarrollo web, durante ese perido aprendimos a manejarnos con
+                Html, css y javascript ( principalmente aplicado al DOM ). La
+                formacion era preminentemente practica, todas las semanas
+                entregabamos una practica que consistia en pasar de imagen o
+                video a pagina web, asi aprendi a organizarme para pasar de
+                prototipado a web. He ido realizando otros cursos por mi cuenta
+                en plataformas como domestika, google activate ....
               </div>
-            
-         </article>
-     </section>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                Autodidacta
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                El aprendizaje fuera de cursos academicos pesa mucho en mi,
+                gracias al gran trabajo que hacen creadores de contenido en
+                plataformas como youtube he podido aprender y practicar un
+                monton de cosas ( generadores de web estaticos, framework de
+                css, figma y prototipado y un sin fin de cosas ). Desde que
+                empece en esto he aprendido a leer documentacion de las
+                tecnologias y desenvolverme en ello.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                Prototipado y recursos
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Una de mis grandes fortalezas para desarrollo web y la capacidad
+                que tengo para generar recursos ( o modificar los que hay ) en
+                poco tiempo, esto agiliza mucho el flujo de trabajo.
+                Herramientas como illustrator, photoshop, figma o after effects
+                son mis grandes aliados. Mobile first como modo de vida, mas
+                alla de los datos acerca de el uso de mobiles como navegadores
+                es una evidencia en el dia a dia, sin el movil no somos nadie
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour"
+                aria-expanded="false"
+                aria-controls="flush-collapseFour"
+              >
+                Las Vegas
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingFour"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Es la empresa familiar, a lo largo de sus 25 años ha ido
+                sufriendo cambios y remodelaciones. La transformacion digital es
+                la que me ha tocado a mi. Es un banco de pruebas ideal para
+                aprender.La pandemia cambio todo, por un lado teniamos que
+                afrontar nuevos retos y por otro teniamos restricciones horarias
+                que nos permitian explorar otras vias. En mi caso decidí hacer
+                un master en diseño grafico y desarrollo web en la escuela
+                Trazos_ , esto me permitio abrir otras vias de negocio ( comida
+                para llevar, impacto en redes sociales, creacion de una
+                identidad de marca y desarrollo de web que cumpliera todas las
+                funciones de los retos a los que nos enfrentabamos. Esta
+                transformacion no esta terminada ya que cada dia implemento
+                nuevas funcionalidades.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive"
+                aria-expanded="false"
+                aria-controls="flush-collapseFive"
+              >
+                2GoTours
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingFive"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Su fundacion fue en 2019, yo forme parte de esta empresa en 2021
+                ya siendo una start-up con relatva madurez. El equipo contaba
+                con 2 ingenieros, un contable y uno de marketing se mascaba la
+                tragedia a nivel estetico. Desde principiois de 2021 hasta el
+                primer trimestre de 2022, durante este periodo creamos landings
+                de venta, pitch decks para inversores, portadas para materiales
+                fisicos ( flyer, caratulas de videojuegos...) corregimos grandes
+                errores de prototipado y un sinfin de tareas apasionantes que
+                nos dejaron un poso de conocimientos practicos.
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
 
-        
-     
-   
-      
-    
-    
-      
+    <!--mock-up-->
+    <section
+      class="container-fluid d-flex flex-column align-items-center px-4 position-sticky top20"
+      id="entrada"
+    >
+      <article
+        class="position-relative d-flex flex-row justify-content-end max600"
+        id="slide"
+      >
+        <img id="imagen" class="imagen" src="/media/iphone-mockup.png" alt="" />
+        <div class="position-absolute top5 desaparece" id="titular">
+          <h1 class="fw-bold text-end fs-7">Landing-page</h1>
+          <p class="text-end">
+            Html
+            <br />
+            Css
+            <br />
+            Javascript
+          </p>
+        </div>
+        <div class="position-absolute top desaparece" id="titular02">
+          <h1 class="fw-bold text-end fs-7">Web Dev</h1>
+          <p class="text-end">
+            Bootstrap
+            <br />
+            JQuery
+          </p>
+        </div>
+        <div class="position-absolute top desaparece" id="titular03">
+          <h1 class="fw-bold text-end fs-7">Design</h1>
+          <p class="text-end">
+            Html
+            <br />
+            Css
+            <br />
+            Javascript
+            <br />
+            swiper
+          </p>
+        </div>
+        <div class="position-absolute top desaparece" id="titular04">
+          <h1 class="fw-bold text-end fs-7">Curriculum</h1>
+          <p class="text-end">
+            Tailwind
+            <br />
+            Javascript
+          </p>
+        </div>
+        <div class="position-absolute desaparece" id="titular05">
+          <div class="top d-flex flex-column align-items-end">
+            <h1 class="fw-bold text-end fs-7">¿Una ultima vuelta?</h1>
+            <button type="button" class="btn btn-danger" id="subir">
+              Inicio
+            </button>
+          </div>
+        </div>
+      </article>
+    </section>
 
+    <script
+      async
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        <script src="/js/web.js"></script>
-      
-</body>
+    <script src="/js/web.js?v=2.19"></script>
+  </body>
 </html>
