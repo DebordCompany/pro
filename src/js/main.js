@@ -28,7 +28,6 @@ window.onload = function () {
   }
   function recoger(recoger) {
     menu.classList.remove("desplegable");
-    console.log("funciona");
   }
   // avance a contacto
 

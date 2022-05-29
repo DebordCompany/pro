@@ -6,7 +6,9 @@ var titular03 = document.querySelector("#titular03");
 var titular04 = document.querySelector("#titular04");
 var titular05 = document.querySelector("#titular05");
 var imagen = document.getElementById("imagen");
-console.log(window.scrollY);
+console.log(
+  "Hola, si estas mirando el codigo para saber como esta hecha la web, no dudes en contactarme y yo mismo te lo explico. Muchas gracias"
+);
 window.onscroll = function () {
   if (window.scrollY > 1400 && window.scrollY < 1700) {
     titular.classList.add("aparece");
