@@ -9,15 +9,40 @@ var swiper = new Swiper(".swiper-container", {
 });
 
 // desplegar descripcion
-var h2Select = document.querySelector("h2");
-var btnMostrar = document.querySelector("#ver");
-var filtro = document.querySelector("#vietnam");
+var h2Select = document.querySelectorAll("h2");
+var btnMostrar = document.querySelectorAll(".minimo");
+var filtro = document.querySelectorAll(".fondo");
+var swiperSlide = document.querySelector("#tiempo");
+var swiperSlideactive = document.querySelectorAll(".swiper-slide-active");
 
-function casa() {
-  h2Select.classList.toggle("ver");
-  filtro.classList.toggle("filtro");
+function ver() {
+  this.classList.toggle("ver");
 }
-btnMostrar.addEventListener("click", casa);
+
+btnMostrar.forEach(function (elemento) {
+  elemento.addEventListener("click", ver);
+});
+function clear() {
+  if (swiperSlide.classList.contains("swiper-slide-next")) {
+    h2Select.forEach(function (elemento) {
+      elemento.classList.remove("ver");
+    });
+    filtro.forEach(function (elemento) {
+      elemento.classList.remove("filtro");
+    });
+    console.log("hola");
+  }
+}
+clear();
+console.log(swiperSlide.classList.contains("swiper-slide-active"));
+
+/*btnMostrar.addEventListener("click", casa);
+function casa() {
+  h2Select.forEach(function () {
+    h2Select.classList.toggle("ver");
+    filtro.classList.toggle("filtro");
+  });
+}*/
 
 //cambio de imagen vietnam
 
