@@ -34,7 +34,18 @@ a {
 }
 .aparece {
   display: block;
+  animation-name: entrar;
+  animation-duration: 2s;
 }
+@keyframes entrar {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .azul {
   background-color: blue;
 }
