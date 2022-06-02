@@ -9,10 +9,14 @@ body {
 a {
   text-decoration: none;
 }
-
+.bg-oficial {
+  background-color: #ffb800;
+}
 .imagen {
   width: 100%;
   height: auto;
+
+  clip-path: inset(2px 2px);
 }
 .top20 {
   top: 20%;
