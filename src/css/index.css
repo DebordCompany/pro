@@ -314,17 +314,38 @@ button {
   height: 100%;
   width: 100%;
   padding: 5%;
-  text-align: right;
-  display: flex;
-  flex-direction: column;
   scroll-behavior: smooth;
+}
+form {
+  padding: 5%;
+}
+form > div {
+  padding: 5%;
+}
+input {
+  border: 0;
+  background-color: #ffb800;
+  border-bottom: 1px solid#101010;
+  outline: none;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 16px;
+  border-radius: 0%;
 }
 .contacto > div {
   padding: 5%;
 }
+.btn-mod {
+  padding: 3%;
+  font-size: 14px;
+  box-shadow: 0px 0px 0px 0px #cf9400;
+  border: 1px solid #101010;
+}
+/* .contacto > div {
+  padding: 5%;
+}
 .contacto p {
   font-size: 30px;
-}
+} */
 
 /******* Footer ********/
 
@@ -397,10 +418,12 @@ footer h4 {
     padding: 7%;
     font-size: 30px;
   }
+
   .resaltado a {
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 100%;
     padding: 5%;
   }
 

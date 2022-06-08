@@ -10,7 +10,7 @@ console.log(
   "Hola, si estas mirando el codigo para saber como esta hecha la web, no dudes en contactarme y yo mismo te lo explico. Muchas gracias"
 );
 window.onscroll = function () {
-  if (window.scrollY > 1400 && window.scrollY < 1700) {
+  if (window.scrollY > 1000 && window.scrollY < 1700) {
     titular.classList.add("aparece");
     imagen.src = "/media/iphone-mockup.png";
   } else if (window.scrollY > 1700) {

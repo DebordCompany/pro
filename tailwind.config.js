@@ -1,20 +1,19 @@
 module.exports = {
-  content: ["./public/pages/curriculum/index.html"],
+  content: [
+    "./public/pages/curriculum/index.html",
+    "./public/pages/form/index.html",
+  ],
   theme: {
-    
     fontFamily: {
-      sans: ['Montserrat Alternates'],
-      serif: ['Montserrat Alternates'],
+      sans: ["Montserrat Alternates"],
+      serif: ["Montserrat Alternates"],
     },
     extend: {
       colors: {
-        primary: '#101010',
-        secondary: '#FFB800',
-      
+        primary: "#101010",
+        secondary: "#FFB800",
+      },
     },
-    
-  
-  },
   },
   plugins: [],
-}
+};
