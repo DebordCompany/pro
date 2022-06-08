@@ -13,6 +13,6 @@ $asunto = "Solicitud de contacto desde Debord Company";
 
 mail($destinatario, $asunto, $mensaje, $header);
 
-header('location:index.html');
+header('location:/pages/form/index.html');
 
 ?>
