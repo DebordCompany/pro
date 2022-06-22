@@ -3,15 +3,21 @@ $name = $_POST ['name'];
 $email = $_POST ['email'];
 $textArea = $_POST ['textArea'];
 
-$mensaje = "Este mensaje ha sido enviado por" . $name . ",\r\n";
-$mensaje = "con el email" . $email . ",\r\n";
-$mensaje = "solicitando" . $textArea . ",\r\n";
-$mensaje = "Enviado el dia" . date("d/m/y", time());
+$mensaje1 = "Este mensaje ha sido enviado por: " . $name . ",\r\n";
+$mensaje2 = "con el email: " . $email . ",\r\n";
+$mensaje3 = "solicitando: " . $textArea . ",\r\n";
+$mensaje4 = "Enviado el dia: " . date("d/m/y", time());
+
+
 
 $destinatario = "mario.sanz.gutierrez@gmail.com";
 $asunto = "Solicitud de contacto desde Debord Company";
 
-mail($destinatario, $asunto, $mensaje, $header);
+$header = 'From: debord.info@gmail.com' . "\r\n" .
+    'Reply-To: debord.info@gmail.com' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+
+mail($destinatario, $asunto, $mensaje1.$mensaje2.$mensaje3.$mensaje4, $header);
 
 header('location:/pages/form/index.html');
 

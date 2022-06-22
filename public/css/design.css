@@ -12,7 +12,41 @@ body {
   margin: 0;
   padding: 0;
 }
-
+.carga {
+  width: 100%;
+  height: 100vh;
+  background: rgba(43, 43, 43, 0.7);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(10px);
+  color: white;
+  position: absolute;
+  z-index: 9;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fin {
+  display: flex;
+}
+.preloader {
+  width: 70px;
+  height: 70px;
+  border: 10px solid #ffb800;
+  border-top: 10px solid #2c2c2c;
+  border-radius: 50%;
+  animation-name: girar;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .swiper-container {
   width: 100%;
   height: 100vh;
@@ -99,6 +133,7 @@ a {
   padding-right: 5%;
   font-size: 25px;
   font-weight: 600;
+  cursor: pointer;
 }
 .insta {
   padding-bottom: 20%;
@@ -108,6 +143,7 @@ a {
   padding: 10px;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 /****** play ****/

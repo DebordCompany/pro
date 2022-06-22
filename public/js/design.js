@@ -8,6 +8,13 @@ var swiper = new Swiper(".swiper-container", {
   },
 });
 
+//tiempo de carga
+var carga = document.querySelector(".carga");
+setTimeout(off, 5000);
+function off() {
+  carga.classList.remove("fin");
+}
+
 // desplegar descripcion
 var h2Select = document.querySelectorAll("h2");
 var btnMostrar = document.querySelectorAll(".minimo");
@@ -50,15 +57,15 @@ var edited01 = document.getElementById("vietnam");
 var boton01 = document.getElementById("trans-01");
 var botonreverse01 = document.getElementById("trans--01");
 
-boton01.addEventListener("click", cambio01);
+boton01.addEventListener("click", cambio01, { passive: true });
 
 function cambio01() {
-  edited01.src = "/media/vietnam-pre.jpg";
+  edited01.src = "/media/vietnam-pre.webp";
 }
-botonreverse01.addEventListener("click", regresar01);
+botonreverse01.addEventListener("click", regresar01, { passive: true });
 
 function regresar01() {
-  edited01.src = "/media/practica vietnam nocturno.jpg";
+  edited01.src = "/media/practica vietnam nocturno.webp";
 }
 
 //cambio imagen monika
@@ -67,12 +74,12 @@ var edited02 = document.getElementById("rolling");
 var boton02 = document.getElementById("trans-02");
 var botonreverse02 = document.getElementById("trans--02");
 
-boton02.addEventListener("click", cambio02);
+boton02.addEventListener("click", cambio02, { passive: true });
 
 function cambio02() {
-  edited02.src = "/media/rolling-pre.jpg";
+  edited02.src = "/media/rolling-pre.webp";
 }
-botonreverse02.addEventListener("click", regresar02);
+botonreverse02.addEventListener("click", regresar02, { passive: true });
 
 function regresar02() {
   edited02.src = "/media/rolling stones.png";

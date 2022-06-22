@@ -556,6 +556,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url('/media/background-paper-texture.jpg');
 }
 
+.bg-\[url\(\'\/media\/background-paper-texture\.webp\'\)\] {
+  background-image: url('/media/background-paper-texture.webp');
+}
+
 .p-3 {
   padding: 0.75rem;
 }

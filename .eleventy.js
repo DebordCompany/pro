@@ -9,6 +9,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/pages/");
   eleventyConfig.addPassthroughCopy("./src/form.php");
   eleventyConfig.addWatchTarget("./src/form.php");
+  eleventyConfig.addPassthroughCopy("./src/sitemap.xml");
+  eleventyConfig.addWatchTarget("./src/sitemap.xml");
 
   return {
     dir: {

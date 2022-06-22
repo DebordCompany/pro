@@ -12,31 +12,31 @@ console.log(
 window.onscroll = function () {
   if (window.scrollY > 1000 && window.scrollY < 1700) {
     titular.classList.add("aparece");
-    imagen.src = "/media/iphone-mockup.png";
+    imagen.src = "/media/iphone-mockup.webp";
   } else if (window.scrollY > 1700) {
     titular.classList.remove("aparece");
   }
   if (window.scrollY > 1700 && window.scrollY < 2000) {
     titular02.classList.add("aparece");
-    imagen.src = "/media/ipad-mockup.png";
+    imagen.src = "/media/ipad-mockup.webp";
   } else if (window.scrollY < 1700 || window.scrollY > 2000) {
     titular02.classList.remove("aparece");
   }
   if (window.scrollY > 2000 && window.scrollY < 2300) {
     titular03.classList.add("aparece");
-    imagen.src = "/media/iphone-mockup-design.png";
+    imagen.src = "/media/iphone-mockup-design.webp";
   } else if (window.scrollY < 2000 || window.scrollY > 2300) {
     titular03.classList.remove("aparece");
   }
   if (window.scrollY > 2300 && window.scrollY < 2600) {
     titular04.classList.add("aparece");
-    imagen.src = "/media/iphone-mockup-cv.png";
+    imagen.src = "/media/iphone-mockup-cv.webp";
   } else if (window.scrollY < 2300 || window.scrollY > 2600) {
     titular04.classList.remove("aparece");
   }
   if (window.scrollY > 2600 && window.scrollY < 2800) {
     titular05.classList.add("aparece");
-    imagen.src = "/media/iphone-mockup-cv.png";
+    imagen.src = "/media/iphone-mockup-cv.webp";
   } else if (window.scrollY < 2600 || window.scrollY > 3500) {
     titular05.classList.remove("aparece");
   }
